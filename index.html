@@ -170,31 +170,30 @@
     <i class="fa-solid fa-screwdriver-wrench float"></i>
   </div>
   <div class="container">
-    <h1>בדיקה לא נכנסים לדירה חדשה בלי בדק בית מקצועי</h1>
+    <h1> לא נכנסים לדירה חדשה בלי בדק בית מקצועי</h1>
     <p>בדיקה מקיפה של דירות פרטיות ורכוש משותף – אנו מאתרים ליקויים ופגמים עוד לפני הכניסה, באמצעות ציוד מתקדם ומקצועי, כדי שתדעו בדיוק מה מצב הנכס ותמנעו טעויות מיותרות.</p>
 
     <div class="section">
       <h2><i class="fa-solid fa-phone"></i> קבלת ייעוץ חינם לפני בדק הבית</h2>
-      <form id="leadForm">
-        <label>שם מלא:</label>
-        <input type="text" id="name" name="name" placeholder="הכניסו שם מלא" required />
-
-        <label>טלפון:</label>
-        <input type="int" id="phone" name="phone" placeholder="הכניסו מספר טלפון" required pattern="^0\d{1,2}-?\d{7}$" title="הכניסו מספר טלפון ישראלי תקין (למשל 050-1234567)" dir="rtl" style="direction:rtl; text-align:right;" inputmode="int" />
-
-        <label>מייל (לא חובה):</label>
-        <input type="email" id="email" name="email" placeholder="הכניסו כתובת מייל" />
-
-        <label>עיר / יישוב + סוג הנכס:</label>
-        <input type="text" id="property" name="property" placeholder="לדוגמה: תל אביב – דירה חדשה מקבלן" required />
-
-        <button type="submit" class="btn">אני רוצה ייעוץ חינם לבדיקת הדירה שלי</button>
-      </form>
+<form id="leadForm" action="https://script.google.com/macros/s/AKfycbxw8c1UepZujHFMd85Rb6C-RTQSaNXRw5-Ta3gxyOaEcJWEQaCKbSHjFLW6JCzbb0FT/exec" method="POST">
+  <label>שם מלא:</label>
+  <input type="text" id="name" name="name" placeholder="הכניסו שם מלא" required />
+  
+  <label>טלפון:</label>
+  <input type="tel" id="phone" name="phone" placeholder="הכניסו מספר טלפון" required pattern="^0\d{1,2}-?\d{7}$" title="הכניסו מספר טלפון ישראלי תקין (למשל 050-1234567)" dir="rtl" style="direction:rtl; text-align:right;" inputmode="tel" />
+  
+  <label>מייל (לא חובה):</label>
+  <input type="email" id="email" name="email" placeholder="הכניסו כתובת מייל" />
+  
+  <label>עיר / יישוב + סוג הנכס:</label>
+  <input type="text" id="property" name="property" placeholder="לדוגמה: תל אביב – דירה חדשה מקבלן" required />
+  
+  <button type="submit" class="btn">אני רוצה ייעוץ חינם לבדיקת הדירה שלי</button>
+</form>
       <div id="successMessage" style="display:none; text-align:center; margin-top:20px; padding:15px; background:#2ecc71; color:#fff; border-radius:10px; font-weight:bold;">
         תודה! נחזור אליך בהקדם לייעוץ חינם 📞
       </div>
     </div>
-
     <div class="section">
       <h2><i class="fa-solid fa-triangle-exclamation"></i> למה אסור לוותר על בדק בית?</h2>
       <ul>
