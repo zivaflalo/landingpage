@@ -180,7 +180,7 @@
         <input type="text" id="name" name="name" placeholder="הכניסו שם מלא" required />
 
         <label>טלפון:</label>
-        <input type="tel" id="phone" name="phone" placeholder="הכניסו מספר טלפון" required />
+        <input type="tel" id="phone" name="phone" placeholder="הכניסו מספר טלפון" required pattern="^0\d{1,2}-?\d{7}$" title="הכניסו מספר טלפון ישראלי תקין (למשל 050-1234567)" />
 
         <label>מייל (לא חובה):</label>
         <input type="email" id="email" name="email" placeholder="הכניסו כתובת מייל" />
