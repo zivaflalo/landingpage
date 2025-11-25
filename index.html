@@ -234,8 +234,10 @@
   </div>
 
   <script>
+    // Handle form submission: optionally use e.preventDefault() to prevent default form submission
+    // and handle the data via JavaScript/AJAX instead of a page reload.
     document.getElementById('leadForm').addEventListener('submit', function(e) {
-      e.preventDefault();
+      //e.preventDefault();
       
       // Get form values
       const name = document.getElementById('name').value;
