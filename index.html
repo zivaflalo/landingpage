@@ -334,6 +334,9 @@ In your html page, add the snippet and call gtag_report_conversion when someone 
         mode: 'no-cors',
         body: formData
       }).then(() => {
+        // Fire Google Ads conversion event
+        gtag_report_conversion();
+
         form.style.display = 'none';
         document.getElementById('successMessage').style.display = 'block';
 
